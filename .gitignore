@@ -1,0 +1,11 @@
+node_modules/
+dist/
+release/
+*.db
+.env
+.env.local
+*.log
+.test*
+scanbrowser_dump.html
+*.png
+

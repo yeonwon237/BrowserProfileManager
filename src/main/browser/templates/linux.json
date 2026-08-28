@@ -1,0 +1,14 @@
+{
+  "platformFamily": "linux",
+  "osVersion": "6.5",
+  "architecture": "x86",
+  "bitness": "64",
+  "devices": [
+    { "id": "linux-intel-fhd", "cores": 8, "memory": 16, "screen": { "width": 1920, "height": 1080, "deviceScaleFactor": 1 }, "gpu": "intel-mesa-uhd-630" },
+    { "id": "linux-nvidia-fhd", "cores": 12, "memory": 32, "screen": { "width": 1920, "height": 1080, "deviceScaleFactor": 1 }, "gpu": "nvidia-linux-1660" },
+    { "id": "linux-amd-qhd", "cores": 16, "memory": 32, "screen": { "width": 2560, "height": 1440, "deviceScaleFactor": 1 }, "gpu": "amd-rx-6600" },
+    { "id": "linux-intel-4k", "cores": 12, "memory": 32, "screen": { "width": 3840, "height": 2160, "deviceScaleFactor": 1.5 }, "gpu": "intel-mesa-uhd-630" },
+    { "id": "linux-laptop-intel", "cores": 8, "memory": 16, "screen": { "width": 1920, "height": 1080, "deviceScaleFactor": 1 }, "gpu": "intel-mesa-uhd-630" }
+  ],
+  "fonts": ["DejaVu Sans", "DejaVu Serif", "Liberation Sans", "Noto Sans", "Ubuntu", "Cantarell", "Courier New", "Georgia", "Liberation Mono", "Liberation Serif", "Noto Serif", "Noto Mono", "Open Sans", "Roboto", "Source Sans Pro", "Source Code Pro", "Source Serif Pro", "Symbol", "Times New Roman", "Noto Sans CJK SC", "Noto Sans CJK TC", "Noto Sans CJK JP", "Noto Sans CJK KR", "Noto Serif CJK SC", "Noto Serif CJK TC", "Noto Serif CJK JP", "Noto Serif CJK KR", "Arial", "DejaVu Sans Mono", "FreeSans", "FreeSerif", "Liberation Sans Narrow", "Noto Color Emoji", "Ubuntu Mono"]
+}

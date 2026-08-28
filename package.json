@@ -1,0 +1,79 @@
+{
+  "name": "ynlogin",
+  "version": "1.2.0",
+  "author": "YNlogin",
+  "description": "YNlogin - Browser profile manager with automation",
+  "main": "src/main/index.js",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\"",
+    "build:renderer": "vite build",
+    "build": "vite build && electron-builder --config.win.signExecutable=false",
+    "build:signed": "node scripts/require-signing-env.js && vite build && electron-builder --config.win.signExecutable=true",
+    "release:audit": "node scripts/release-audit.js",
+    "release:audit:signed": "node scripts/release-audit.js --require-signed",
+    "quality:fingerprint": "node tests/step58_fingerprint_identity_lab.test.js && node tests/step59_runtime_fingerprint_identity.test.js",
+    "quality:gate": "node scripts/audit-vietnamese-ui.js && eslint src --ext .js,.jsx && node tests/run-all.js && vite build",
+    "team-sync:server": "node scripts/team-sync-server.js",
+    "build:dir": "vite build && electron-builder --dir --win --config.win.signExecutable=false",
+    "preview": "vite preview",
+    "lint": "eslint src --ext .js,.jsx",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "node tests/run-all.js",
+    "test:e2e": "npm run build:renderer && node tests/step55_electron_ui_e2e.test.js"
+  },
+  "dependencies": {
+    "adm-zip": "^0.6.0",
+    "playwright": "^1.44.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.18.2",
+    "sql.js": "^1.10.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^6.1.0",
+    "autoprefixer": "^10.4.19",
+    "concurrently": "^8.2.2",
+    "electron": "^43.4.1",
+    "electron-builder": "^26.15.3",
+    "eslint": "^8.57.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.9.2",
+    "vite": "^8.2.2",
+    "wait-on": "^7.2.0"
+  },
+  "build": {
+    "appId": "com.ynlogin.desktop",
+    "productName": "YNlogin",
+    "files": [
+      "src/main/**/*",
+      "src/shared/**/*",
+      "src/sdk/**/*",
+      "assets/**/*",
+      "dist/**/*"
+    ],
+    "directories": {
+      "output": "release"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico",
+      "artifactName": "YNlogin-Setup-${version}-${arch}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "YNlogin",
+      "deleteAppDataOnUninstall": false
+    },
+    "mac": {
+      "target": "dmg"
+    }
+  }
+}

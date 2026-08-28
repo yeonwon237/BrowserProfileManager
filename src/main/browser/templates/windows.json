@@ -1,0 +1,17 @@
+{
+  "platformFamily": "windows",
+  "osVersion": "11",
+  "architecture": "x86",
+  "bitness": "64",
+  "devices": [
+    { "id": "win11-intel-fhd", "cores": 8, "memory": 16, "screen": { "width": 1920, "height": 1080, "deviceScaleFactor": 1 }, "gpu": "intel-uhd-630" },
+    { "id": "win11-nvidia-qhd", "cores": 12, "memory": 32, "screen": { "width": 2560, "height": 1440, "deviceScaleFactor": 1 }, "gpu": "nvidia-gtx-1660" },
+    { "id": "win11-amd-fhd", "cores": 8, "memory": 16, "screen": { "width": 1920, "height": 1080, "deviceScaleFactor": 1 }, "gpu": "amd-rx-6600" },
+    { "id": "win11-intel-4k", "cores": 16, "memory": 32, "screen": { "width": 3840, "height": 2160, "deviceScaleFactor": 1.5 }, "gpu": "intel-uhd-630" },
+    { "id": "win11-nvidia-4k", "cores": 16, "memory": 64, "screen": { "width": 3840, "height": 2160, "deviceScaleFactor": 1.5 }, "gpu": "nvidia-gtx-1660" },
+    { "id": "win10-amd-fhd", "cores": 6, "memory": 16, "screen": { "width": 1920, "height": 1080, "deviceScaleFactor": 1 }, "gpu": "amd-rx-6600" },
+    { "id": "win11-laptop-intel", "cores": 8, "memory": 16, "screen": { "width": 1920, "height": 1080, "deviceScaleFactor": 1.25 }, "gpu": "intel-uhd-630" },
+    { "id": "win11-laptop-nvidia", "cores": 8, "memory": 16, "screen": { "width": 1920, "height": 1080, "deviceScaleFactor": 1.25 }, "gpu": "nvidia-gtx-1660" }
+  ],
+  "fonts": ["Arial", "Calibri", "Cambria", "Consolas", "Segoe UI", "Times New Roman", "Arial Black", "Comic Sans MS", "Courier New", "Georgia", "Impact", "Lucida Console", "Lucida Sans Unicode", "Microsoft Sans Serif", "MS Gothic", "MS PGothic", "MS Sans Serif", "MS Serif", "Palatino Linotype", "Symbol", "Tahoma", "Trebuchet MS", "Verdana", "Webdings", "Wingdings", "Wingdings 2", "Wingdings 3", "Segoe UI Symbol", "Segoe MDL2 Assets", "Malgun Gothic", "Microsoft JhengHei", "Microsoft YaHei", "Meiryo", "SimSun", "SimHei", "Noto Sans", "Noto Sans CJK SC", "Noto Sans CJK TC", "Noto Sans CJK JP", "Noto Sans CJK KR"]
+}

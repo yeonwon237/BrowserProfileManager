@@ -1,0 +1,18 @@
+{
+  "id": "open-website",
+  "name": "Open Website",
+  "version": "1.0.0",
+  "description": "Opens a URL in the profile's browser and confirms the page loaded.",
+  "entry": "main.js",
+  "runModes": ["browser"],
+  "permissions": ["browser.page", "browser.navigation"],
+  "inputSchema": [
+    {
+      "key": "url",
+      "label": "URL",
+      "type": "text",
+      "required": true,
+      "placeholder": "https://example.com"
+    }
+  ]
+}

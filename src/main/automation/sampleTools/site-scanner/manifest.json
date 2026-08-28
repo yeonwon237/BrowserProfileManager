@@ -1,0 +1,63 @@
+{
+  "id": "site-scanner",
+  "name": "Site Scanner",
+  "version": "1.0.0",
+  "description": "Visits a URL, collects visible links, optionally filters by keyword and saves a report. Demonstrates dynamic form inputs.",
+  "entry": "main.js",
+  "runModes": ["browser"],
+  "permissions": ["browser.page", "browser.navigation", "filesystem.selectedFile"],
+  "inputSchema": [
+    {
+      "key": "url",
+      "label": "Start URL",
+      "type": "url",
+      "required": true,
+      "placeholder": "https://example.com"
+    },
+    {
+      "key": "keyword",
+      "label": "Keyword filter",
+      "type": "text",
+      "placeholder": "optional",
+      "hint": "Only collect links containing this word"
+    },
+    {
+      "key": "maxPages",
+      "label": "Max pages",
+      "type": "number",
+      "min": 1,
+      "max": 100,
+      "default": 5
+    },
+    {
+      "key": "delayMs",
+      "label": "Delay between pages (ms)",
+      "type": "number",
+      "min": 0,
+      "max": 30000,
+      "default": 500
+    },
+    {
+      "key": "followLinks",
+      "label": "Follow links on the page",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "key": "mode",
+      "label": "Scan mode",
+      "type": "select",
+      "options": [
+        { "value": "single", "label": "Single page" },
+        { "value": "crawl", "label": "Crawl (same domain)" }
+      ],
+      "default": "single"
+    },
+    {
+      "key": "outputFolder",
+      "label": "Save report to",
+      "type": "folder",
+      "hint": "Writes collected links to links.txt in this folder"
+    }
+  ]
+}

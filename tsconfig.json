@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": false,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "ES2022",
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*.js", "src/**/*.jsx", "tests/**/*.js", "test-*.js"]
+}

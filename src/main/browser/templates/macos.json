@@ -1,0 +1,14 @@
+{
+  "platformFamily": "macos",
+  "osVersion": "15.0",
+  "architecture": "arm",
+  "bitness": "64",
+  "devices": [
+    { "id": "macos-m1-retina", "cores": 8, "memory": 16, "screen": { "width": 2560, "height": 1600, "deviceScaleFactor": 2 }, "gpu": "apple-m1" },
+    { "id": "macos-m2-retina", "cores": 8, "memory": 16, "screen": { "width": 3024, "height": 1964, "deviceScaleFactor": 2 }, "gpu": "apple-m2" },
+    { "id": "macos-m1-pro", "cores": 10, "memory": 32, "screen": { "width": 3024, "height": 1964, "deviceScaleFactor": 2 }, "gpu": "apple-m1" },
+    { "id": "macos-m2-max", "cores": 12, "memory": 64, "screen": { "width": 3456, "height": 2234, "deviceScaleFactor": 2 }, "gpu": "apple-m2" },
+    { "id": "macos-m3-base", "cores": 8, "memory": 16, "screen": { "width": 2560, "height": 1664, "deviceScaleFactor": 2 }, "gpu": "apple-m2" }
+  ],
+  "fonts": ["Arial", "Helvetica", "Menlo", "Monaco", "Times", "Verdana", "Arial Black", "Arial Narrow", "Arial Rounded MT Bold", "Arial Unicode MS", "Courier New", "Georgia", "Helvetica Neue", "Impact", "Lucida Grande", "Lucida Sans Unicode", "Microsoft Sans Serif", "Palatino", "Symbol", "Tahoma", "Times New Roman", "Trebuchet MS", "Verdana", "Zapf Dingbats", "Apple Color Emoji", "Apple SD Gothic Neo", "Apple Symbols", "Noto Sans", "Noto Sans CJK SC", "Noto Sans CJK TC", "Noto Sans CJK JP", "Noto Sans CJK KR", "PingFang SC", "Hiragino Sans", "Nanum Gothic"]
+}
